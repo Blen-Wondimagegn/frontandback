@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import App from "../src/components/App";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+// import App from "../src/components/App";
 import PropTypes from "prop-types";
-const Hello = (props) => <div>Hello{props.name}!</div>;
+
+const Hello = (props) => <div>Hello {props.name}!</div>;
 
 Hello.defaultProps = {
   name: "David",
