@@ -1,9 +1,17 @@
 import React, { Component, createContext } from "react";
+import { Route, Switch } from "react-router-dom";
 
-const App = () => {
-
-return (
-<div>HEYYYY</div>
-)
+class App extends Component {
+  render() {
+    return (
+      <AuthProvider>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Diets} />
+        </Switch>
+      </AuthProvider>
+    );
+  }
 }
-export default App 
+
+export default App;
