@@ -1,13 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import App from "../src/components/App";
+import PropTypes from "prop-types";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+// import App from "../src/components/App";
+
+const Hello = (props) => <div> Hello {props.name}!</div>;
+
+Hello.PropTypes = {
+  name: PropTypes.string,
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
-    <Router>
-      <Route path="/" component={App} />
-    </Router>,
+    // <Router>
+    //   <Route path="/" component={App} />
+    // </Router>,
+    <Hemml name="React" />,
     document.body.appendChild(document.createElement("div"))
   );
 });
