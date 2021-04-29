@@ -1,24 +1,19 @@
-# README
+# Healthy Meals
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TThis app uses:
 
-Things you may want to cover:
+- Ruby version: `2.7`
+- Rails version: `6.0.3.4`
+- Database: `postgresql`
+- React version: `16.12.0`
+- React Hooks API
+- React Context API
 
-* Ruby version
+## Running it locally
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- run `bundle exec rails db:prepare`
+- run `npm install` or `yarn install`
+- run `bundle exec rails s`
+- in another tab run `./bin/webpack-dev-server` (optional)
+- in another tab run `sidekiq` (optional, but necessary for things like password reset emails)
+- navigate to `http://localhost:3000`

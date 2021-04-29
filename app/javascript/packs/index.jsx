@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // <Router>
     //   <Route path="/" component={App} />
     // </Router>,
-    <Hemml name="React" />,
+    <Hello name="React" />,
     document.body.appendChild(document.createElement("div"))
   );
 });
