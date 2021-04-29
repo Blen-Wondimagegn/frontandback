@@ -1,6 +1,7 @@
 {
   "name": "frontandback",
   "private": true,
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://maps.googleapis.com 'unsafe-inline'; object-src 'self'",
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
